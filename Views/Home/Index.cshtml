@@ -1,0 +1,55 @@
+@model ApiSpotifyReadme.Models.MusicViewModel // Substitua pelo seu namespace
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div>
+    <svg width="480" height="133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <foreignObject width="480" height="133">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="container">
+                <style>
+                    .main {
+                        margin-top: 40px;
+                        display: flex;
+                    }
+                    .currentStatus {
+                        float: left;
+                        color: #f7f7f7;
+                        font-size: 24px;
+                        position: static;
+                        margin-top: -5px;
+                        margin-left: 10px;
+                        background: linear-gradient(-125deg, rgb(255, 0, 0), rgb(0, 0, 255));                    
+                        background-size: 200% 100%;
+                        background-position: 0% 50%;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                        -webkit-box-decoration-break: clone;
+                        box-decoration-break: clone;
+                        animation: gradient 17s ease infinite;
+                    }
+                    /* Estilos adicionais do SVG... */
+                </style>
+
+                <div class="main">
+                    <a class="art" href="@Model.SongURI" target="_blank">
+                        <center>
+                            <img src="data:image/png;base64,@Model.Image" class="cover" />
+                        </center>
+                    </a>
+
+                    <div class="content">
+                        <a href="@Model.SongURI" target="_blank">
+                            <div class="song">@Model.SongName</div>
+                        </a>
+                        <a href="@Model.ArtistURI" target="_blank">
+                            <div class="artist">@Model.ArtistName</div>
+                        </a>
+                        <div id="bars">{{contentBar|safe}}</div> 
+                    </div>
+                </div>
+            </div>
+        </foreignObject>
+    </svg>
+</div>

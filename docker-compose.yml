@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  spotify-api:
+    build: .
+    ports:
+      - "5000:80"
+    environment:
+      - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
+      - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
+      - SPOTIFY_REFRESH_TOKEN=${SPOTIFY_REFRESH_TOKEN}
