@@ -1,5 +1,5 @@
 using System;
-using ApiSpotifyReadme.Models; 
+using ApiSpotifyReadme.Models;
 
 namespace ApiSpotifyReadme
 {
@@ -7,23 +7,13 @@ namespace ApiSpotifyReadme
     {
         static void Main(string[] args)
         {
-            var config = new SpotifyConfig
-            {
-                ClientId = "seu_client_id", 
-                ClientSecret = "seu_client_secret",
-                RefreshToken = "seu_refresh_token" 
-            };
+            var config = new SpotifyConfig(
+                Environment.GetEnvironmentVariable("SPOTIFY_CLIENT_ID") ?? throw new InvalidOperationException("SPOTIFY_CLIENT_ID não está definido."),
+                Environment.GetEnvironmentVariable("SPOTIFY_CLIENT_SECRET") ?? throw new InvalidOperationException("SPOTIFY_CLIENT_SECRET não está definido."),
+                Environment.GetEnvironmentVariable("SPOTIFY_REFRESH_TOKEN") ?? throw new InvalidOperationException("SPOTIFY_REFRESH_TOKEN não está definido.")
+            );
 
-            if (config.ClientId != null)
-            {
-                // Use config.ClientId com segurança
-                Console.WriteLine($"Client ID: {config.ClientId}");
-            }
-            else
-            {
-                Console.WriteLine("Client ID não foi configurado.");
-            }
-
+            Console.WriteLine($"Client ID: {config.ClientId}");
         }
     }
 }

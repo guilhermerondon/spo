@@ -36,3 +36,5 @@ C:\Users\Rondon\Desktop\ApiSpotifyReadme\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Rondon\Desktop\ApiSpotifyReadme\bin\Debug\net8.0\SpotifyAPI.Web.dll
 C:\Users\Rondon\Desktop\ApiSpotifyReadme\obj\Debug\net8.0\ApiSpotifyReadme.RazorAssemblyInfo.cache
 C:\Users\Rondon\Desktop\ApiSpotifyReadme\obj\Debug\net8.0\ApiSpotifyReadme.RazorAssemblyInfo.cs
+C:\Users\Rondon\Desktop\ApiSpotifyReadme\bin\Debug\net8.0\vercel.json
+C:\Users\Rondon\Desktop\ApiSpotifyReadme\obj\Debug\net8.0\ApiSpotifyReadme.sourcelink.json

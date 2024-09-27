@@ -1,9 +1,13 @@
-namespace ApiSpotifyReadme.Models 
+public class SpotifyConfig
 {
-    public class SpotifyConfig
+    public string ClientId { get; }
+    public string ClientSecret { get; }
+    public string RefreshToken { get; }
+
+    public SpotifyConfig(string clientId, string clientSecret, string refreshToken)
     {
-        public string? ClientId { get; set; }
-        public string? ClientSecret { get; set; }
-        public string? RefreshToken { get; set; }
+        ClientId = clientId;
+        ClientSecret = clientSecret;
+        RefreshToken = refreshToken;
     }
 }
