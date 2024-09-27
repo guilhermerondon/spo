@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiSpotifyReadme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6c41f850b86c85d1515565d029721377740b2bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiSpotifyReadme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiSpotifyReadme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

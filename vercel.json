@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "YourProject.csproj",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "bin/Debug/net8.0/publish"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1"
+      }
+    ]
+  }
+  
