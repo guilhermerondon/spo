@@ -1,7 +1,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json; // Certifique-se de que você tem o Newtonsoft.Json instalado
-using ApiSpotifyReadme.Models; // Ajuste para o namespace correto
+using Newtonsoft.Json;
+using ApiSpotifyReadme.Models;
 using System.Collections.Generic; // Para KeyValuePair
 
 namespace ApiSpotifyReadme.Services
