@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ApiSpotifyReadme.Services; // Ajuste para o namespace correto
+using ApiSpotifyReadme.Services;
 using System.Threading.Tasks;
 
 namespace ApiSpotifyReadme.Controllers
